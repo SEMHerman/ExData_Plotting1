@@ -35,28 +35,15 @@ web site</a>:
 
 ## Loading the data
 
+Data was downloaded as a .zip file and unziped as a .txt file
 
+* Because of the large size of the file only dates starting at 2007-02-01 and
+ending with 2007-02-02 will be read into the dataframe
 
+* Column names were added back using a datarame that read in only the first row
 
-
-When loading the dataset into R, please consider the following:
-
-* The dataset has 2,075,259 rows and 9 columns. First
-calculate a rough estimate of how much memory the dataset will require
-in memory before reading into R. Make sure your computer has enough
-memory (most modern computers should be fine).
-
-* We will only be using data from the dates 2007-02-01 and
-2007-02-02. One alternative is to read the data from just those dates
-rather than reading in the entire dataset and subsetting to those
-dates.
-
-* You may find it useful to convert the Date and Time variables to
-Date/Time classes in R using the `strptime()` and `as.Date()`
-functions.
-
-* Note that in this dataset missing values are coded as `?`.
-
+* Date and Time variables were converted to Date/Time classes using the
+`strptime()` and `as.Date()` functions.
 
 ## Making Plots
 
@@ -65,50 +52,41 @@ varies over a 2-day period in February, 2007. Your task is to
 reconstruct the following plots below, all of which were constructed
 using the base plotting system.
 
-First you will need to fork and clone the following GitHub repository:
+Data was forked and cloned from the following GitHub repository:
 [https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1)
 
+R scripts for four plots were created that construct one plot and save
+it to a PNG file with a width of 480 pixels and a height of 480 pixels.
 
-For each plot you should
+Plot files were named as `plot1.png`, `plot2.png`, etc.
 
-* Construct the plot and save it to a PNG file with a width of 480
-pixels and a height of 480 pixels.
+Separate R code files were created (`plot1.R`, `plot2.R`, etc.) that
+construct the corresponding plot, i.e. code in `plot1.R` constructs
+the `plot1.png` plot. 
 
-* Name each of the plot files as `plot1.png`, `plot2.png`, etc.
+* R code files include code for unzipping, reading and creating the PNG file,
+plotting the graph and closing the PNG file connection. 
 
-* Create a separate R code file (`plot1.R`, `plot2.R`, etc.) that
-constructs the corresponding plot, i.e. code in `plot1.R` constructs
-the `plot1.png` plot. Your code file **should include code for reading
-the data** so that the plot can be fully reproduced. You should also
-include the code that creates the PNG file.
+* All PNG files and R code files were uploaded to this git repository
 
-* Add the PNG file and R code file to your git repository
-
-When you are finished with the assignment, push your git repository to
-GitHub so that the GitHub version of your repository is up to
-date. There should be four PNG files and four R code files.
-
-
-The four plots that you will need to construct are shown below. 
-
+The four plots that were constructed are shown below. 
 
 ### Plot 1
 
-
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot1](plot1.png) 
 
 
 ### Plot 2
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot2](plot2.png) 
 
 
 ### Plot 3
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot3](plot3.png) 
 
 
 ### Plot 4
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+![plot4](plot4.png) 
 
